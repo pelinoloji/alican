@@ -6,7 +6,7 @@ import tree from "./tree.jpg"
 
 const Works = () => {
   return (
-    <div className="Works">
+    <div className="col-9 Works">
       <div className="Work">
         <img src={dummyImage} alt="dummy"/>
       </div>

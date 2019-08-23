@@ -1,14 +1,21 @@
 import React from "react";
-import "./App.css";
+import { Switch, Route, BrowserRouter as Router } from "react-router-dom";
 import Navigation from "./Navigation";
+import Contact from "./Contact";
 import Works from "./Works";
 
+import "./App.css";
 const App = () => {
   return (
-    <div className="App">
-      <Navigation />
-      <Works />
-    </div>
+    <Router>
+      <div className="container">
+        <Navigation />
+        <Switch>
+          <Route path="/contact" component={Contact} />
+          <Route path="/ui-ux" component={Works} />
+        </Switch>
+      </div>
+    </Router>
   );
 };
 

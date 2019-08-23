@@ -3,9 +3,9 @@ import "./Contact.css";
 
 const Contact = () => {
   return (
-    <div className="Contact">
-      <div className="ContactImage">BOX</div>
-      <div className="ContactDetails">
+    <div className="Contact col-8">
+      <div className="ContactImage col-3">BOX</div>
+      <div className="col-6">
         <div className="NameTitle">Alican Hicyorulmaz</div>
         <div>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores ut
