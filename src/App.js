@@ -11,8 +11,20 @@ const App = () => {
       <div className="container">
         <Navigation />
         <Switch>
+          <Route
+            exact
+            path="/"
+            render={props => <Works {...props} type="all" />}
+          />
+          <Route
+            path="/ui-ux"
+            render={props => <Works {...props} type="ui-ux" />}
+          />
+          <Route
+            path="/print"
+            render={props => <Works {...props} type="print" />}
+          />
           <Route path="/contact" component={Contact} />
-          <Route path="/ui-ux" component={Works} />
         </Switch>
       </div>
     </Router>
