@@ -1,16 +1,18 @@
+* {
+  box-sizing: border-box;
+}
+
 .Works {
   margin: 30px 100px 0px 100px;
   display: flex;
-  flex-wrap: wrap;
   flex-direction: row;
 }
 
 .Work {
   width: 500px;
-  /* height: 700px; */
-  background-color: #dfe3ef;
   margin: 0px 10px 10px 0px;
-  align-content: flex-start;
+
+  /* flex: 50%; */
 }
 
 img {
