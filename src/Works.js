@@ -1,30 +1,19 @@
 import React from "react";
 import "./Works.css";
-import dummyImage from "./dummyImage.jpg";
-import psychedelic from "./psychedelic.jpg";
-import tree from "./tree.jpg"
 
-const Works = () => {
+import allWorks from "./works-data";
+
+const Works = ({ type }) => {
+  const worksByType =
+    (type === "all" && allWorks) || allWorks.filter(work => work.type === type);
+    
   return (
-    <div className="Works">
-      <div className="Work">
-        <img src={dummyImage} alt="dummy"/>
-      </div>
-      <div className="Work">
-        <img src={psychedelic} alt="dummy"/>
-      </div>
-      <div className="Work">
-        <img src={tree} alt="dummy"/>
-      </div>
-      <div className="Work">
-        <img src={dummyImage} alt="dummy"/>
-      </div>
-      <div className="Work">
-        <img src={psychedelic} alt="dummy"/>
-      </div>
-      <div className="Work">
-        <img src={tree} alt="dummy"/>
-      </div>
+    <div className="col-9 Works">
+      {worksByType.map(work => (
+        <div key={work.index} className="Work">
+          <img src={require(`./${work.path}`)} alt="dummy" />
+        </div>
+      ))}
     </div>
   );
 };

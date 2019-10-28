@@ -1,13 +1,9 @@
-.Contact{
+.Contact {
   display: flex;
 }
 
 .ContactImage {
-  width: 500px;
-  height: 600px;
+  height: 100px;
   background-color: #dfe3ef;
 }
 
-.ContactForm {
-  align-content: flex-end; 
-}
