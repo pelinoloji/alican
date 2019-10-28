@@ -1,17 +1,14 @@
-* {
-  box-sizing: border-box;
-}
-
 .Works {
-  margin: 30px 100px 0px 100px;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
+  /* justify-content: space-around; */
 }
 
 .Work {
   width: 500px;
   margin: 0px 10px 10px 0px;
-
+  /* flex-basis: auto; */
   /* flex: 50%; */
 }
 
